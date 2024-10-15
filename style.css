@@ -1,0 +1,51 @@
+body{
+    background-image: url(img/bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+.container{
+    text-align: center;
+    padding: 40px;
+    border-radius: 40px;
+    margin-top: 60px;
+}
+#txtusername{
+    padding: 10px;
+    width: 250px;
+    margin-top: 3%;
+    margin-bottom:1%;
+    border-radius: 5px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 700;
+}
+#txtpassword{
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom:1%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 700;
+}
+#logopng{
+    width: 250px;
+}
+#btnlogin{
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    width: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 700;
+
+
+}
