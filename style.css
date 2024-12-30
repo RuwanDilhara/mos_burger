@@ -1,51 +1,25 @@
 body{
-    background-image: url(img/bg.jpg);
+    background-image: url(assets/img/1.jpeg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
+    height: 100vh;
+    display: flex;
+    
 }
-.container{
-    text-align: center;
-    padding: 40px;
-    border-radius: 40px;
-    margin-top: 60px;
+.email{
+    background-color: none;
 }
-#txtusername{
-    padding: 10px;
-    width: 250px;
-    margin-top: 3%;
-    margin-bottom:1%;
-    border-radius: 5px;
-    border: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-    font-weight: 700;
+#blur-card {
+    backdrop-filter: blur(3px);
 }
-#txtpassword{
-    padding: 10px;
-    width: 250px;
-    border-radius: 5px;
-    border: none;
-    margin-bottom:1%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-    font-weight: 700;
+#tasatsstya:hover{
+    background-color:rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
 }
-#logopng{
-    width: 250px;
-}
-#btnlogin{
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: none;
-    width: 250px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-    font-weight: 700;
-    border: 1px solid black;
-}
-#btnlogin:hover{
-    border: 1px solid rgb(255, 230, 0);
+.btn:hover {
+    background-color: rgb(255, 0, 0); /* Change background to white */
+    color: black; /* Change text color to black */
+    
 }

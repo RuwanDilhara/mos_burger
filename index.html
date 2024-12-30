@@ -4,40 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MOS-Burger</title>
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .btn-outline-light:hover {
+            background-color: white !important; /* Change background to white */
+            color: black!important;/* Change text color to black */
+            border-color: white!important; /* Change border color */
+        }
+    </style>
+
 </head>
-<link rel="stylesheet" href="style.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 <body>
-    <div class="container" data-aos="flip-left"
-    data-aos-easing="ease-out-cubic"
-    data-aos-duration="2000">
-        <img id="logopng" src="img/mos_burgerlogo.png" alt="">
-        <br>
-        <input id="txtusername" type="text" placeholder="user name">
-        <br>
-        <input id="txtpassword" type="password" placeholder="password">
-        <br>
-        <button id="btnlogin" type="button" class="btn btn-outline-dark" onclick="login()">Login</button>
+    <div class="container  d-flex justify-content-start align-items-center">
+        
+        <div id="blur-card" class="card shadow-lg bg-transparent border p-4" style="width: 25rem; border-radius: 15px; margin-left: 10%;">
+            <div class="card-body text-white">
+                <form>
 
+                    <div class="text-center mb-4">
+                        <img src="assets/img/mos_burgerlogo.png" alt="" class="img-fluid" style="max-width: 60%;">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input  id="email"  type="email" class="form-control bg-transparent text-white"  placeholder="Enter email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input id="password"  type="password" class="form-control  bg-transparent text-white" placeholder="Password">
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input type="checkbox" class="form-check-input" id="checkbox">
+                        <label class="form-check-label" for="checkbox">Remember me</label>
+                    </div>
+                    <input type="button" class="btn btn-outline-light w-100  bg-transparent text-white hover-bg-white " onclick="login()" value="Login">
+
+                </form>
+            </div>
+        
+        
     </div>
-    <div class="Footer">
-        <hr>
-        <p style="text-align: center; ">© 2021 RD Creation™, Inc. All rights reserved.</p>
+    <!------------------------------------ FOOTER ------------------------------------------->
+        
+    <div class="container fixed-bottom">
+        <footer class="py-3 ">
+            
+            <p class="text-center  text-white"> 2024 Company, Inc</p>
+        </footer>
     </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+
     <script src="app.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
         AOS.init({
-            duration : 3000
+            duration: 3000
         });
     </script>
 </body>

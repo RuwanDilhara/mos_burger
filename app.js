@@ -1,14 +1,14 @@
 // =======================================LOGIN BY BUTTON===========================================
 
 function login() {
-    let username = document.getElementById("txtusername").value;
-    let password = document.getElementById("txtpassword").value;
+    let username = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
 
-    if (username === 'admin@123' && password === '1234') {
-        window.location.href = 'Admin/admin.html'
+    if (username === 'admin' && password === '1234') {
+        window.location.href = "Admin/admin.html"
     }
 
-    else if (username === 'cashier@123' && password === '1234') {
+    else if (username === 'cashier' && password === '1234') {
         window.location.href = 'Cashier/cashier.html'
     }
 }
